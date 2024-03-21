@@ -1,0 +1,12 @@
+.nav-top-list {
+    display: flex;
+    column-gap: 25px;
+}
+
+
+.nav-top__link {
+    line-height: calc(33 / 12);
+    letter-spacing: 1px;
+
+    color: var(--nav-top-text-color);
+}

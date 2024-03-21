@@ -1,0 +1,24 @@
+.advantages__wrapper {
+    margin: 83px 0 240px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__title {
+    max-width: 1077px;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: calc(56 / 48);
+    color: var(--title-color);
+
+}
+
+.advantages__btn {
+    display: block;
+    margin-bottom: 63px;
+    font-size: 14px;
+    line-height: calc(12 / 14);
+    letter-spacing: 0.75px;
+    color: var(--btn-color);
+}

@@ -1,0 +1,24 @@
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 33px 0 125px;
+    height: 99px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.nav-bottom__icons {
+    display: flex;
+    align-items: center; 
+}
+
+.map-icon {
+    margin-right: 10px;
+}
+
+.map-icon_text {
+    line-height: calc(14.4 / 12);
+    letter-spacing: 2px;
+    color: var(--nav-bottom-text-color);
+    margin-right: 46px;
+}

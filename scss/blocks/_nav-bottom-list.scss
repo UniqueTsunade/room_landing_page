@@ -1,0 +1,10 @@
+.nav-bottom-list {
+    display: flex;
+    column-gap: 100px;
+}
+
+.nav-bottom-list__link {
+    line-height: calc(14 / 12);
+    letter-spacing: 2px;
+    color: var(--nav-bottom-text-color);
+}

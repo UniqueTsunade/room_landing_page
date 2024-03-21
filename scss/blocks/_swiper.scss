@@ -1,0 +1,38 @@
+.swiper {
+  position: relative;
+  max-width: 1344px;
+  height: 736px;
+
+
+}
+
+.swiper-slide img{
+  display: block;
+  max-width: 1344px;
+  height: 700px;
+  object-fit: cover;
+}
+
+#sliderPrev {
+  position: absolute;
+  z-index: 1;
+  left: 56px;
+  top: 50%;
+}
+
+#sliderNext {
+  position: absolute;
+  z-index: 1;
+  right: 56px;
+  top: 50%;
+}
+.swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--btn-color);
+}
+.swiper .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: var(--btn-color);
+}

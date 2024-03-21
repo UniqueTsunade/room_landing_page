@@ -1,0 +1,30 @@
+.brands__wrapper {
+    margin-bottom: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands__title {
+    margin-bottom: 27px;
+    font-size: 48px;
+    line-height: calc(48 / 48);
+    color: var(--title-color);
+}
+
+.brands__subtitle {
+    margin-bottom: 125px;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    color: #4A4A4A;
+}
+
+.brands__banner {
+    padding: 0 20px 49px 45px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 49px 43px;
+}
+
+ 

@@ -1,0 +1,29 @@
+.header {
+    margin-bottom: 210px;
+}
+
+.header-content__img {
+    display: block;
+    margin: 0 auto 80px;
+}
+
+.header-content__text {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content__title {
+    max-width: 355px;
+    margin-right: 136px;
+    font-size: 48px;
+    line-height: calc(58 / 48);
+    color: var(--title-color);
+}
+
+.header-content-description {
+    max-width: 569px;
+    padding: 13px 0 1px;
+    font-size: 24px;
+    line-height: calc(40 / 24);
+    color: var(--text-color);
+}

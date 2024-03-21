@@ -1,0 +1,21 @@
+.presentation__wrapper {
+    margin: 240px 72px 288px;
+}
+
+.presentation__text {
+    max-width: 882px;
+    margin: 0 auto;
+    font-size: 46px;
+    line-height: calc(52 / 46);
+}
+
+.presentation__description {
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.presentation__title {
+    max-width: 861px;
+    margin-bottom: 135px;
+    color: var(--deep-dark-text-color);
+}

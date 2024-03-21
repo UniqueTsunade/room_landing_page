@@ -1,0 +1,41 @@
+.presentation-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.presentation-content__card {
+    display: flex;
+
+        &:not(:first-child) {
+            margin-top: 64px;
+        }
+}
+
+.presentation-content__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    padding: 110px;
+}
+
+presentation-content__text_left {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.presentation-content__text_left {
+    padding-left: 110px;
+    padding-right: 121px;
+}
+
+.presentation-content__point {
+    font-size: 32px;
+    line-height: calc(36 / 32) 36px;
+    color: var(--title-color);
+}
+
+.presentation-content__description {
+    // max-width: 298px;
+    line-height: calc(24 / 16);
+    color: var(--text-color);
+}

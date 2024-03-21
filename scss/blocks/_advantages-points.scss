@@ -1,0 +1,28 @@
+.advantages-points {
+    max-width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.advantages-point {
+    max-width: 323px;
+}
+
+.advantages-points__img {
+    display: block;
+    margin: 0 auto 42px;
+}
+
+.advantages-points__title {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: calc(24 / 18);
+    color: var(--title-color);
+}
+
+.advantages-points__description {
+    line-height: calc(24 / 16);
+    color: var(--text-color); 
+}

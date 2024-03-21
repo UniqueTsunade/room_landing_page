@@ -1,31 +1,41 @@
-.swiper {
+.swiper-wrapper {
   position: relative;
-  max-width: 1344px;
-  height: 736px;
-
-
+  padding-bottom: 48px;
 }
 
-.swiper-slide img{
-  display: block;
-  max-width: 1344px;
-  height: 700px;
-  object-fit: cover;
+.coverflow { 
+  width: 100%;
+  max-width: 1440px;  
+  margin: 0 auto; 
 }
+
+
+.coverflow .swiper-slide { 
+  width: 100%; 
+  max-width: 1344px; 
+}
+
+.coverflow .swiper-slide img {
+  width: 100%;  
+  
+  aspect-ratio: 1344 / 700; 
+}
+
 
 #sliderPrev {
   position: absolute;
   z-index: 1;
-  left: 56px;
-  top: 50%;
+  left: 7%;
+  top: 44%;
 }
 
 #sliderNext {
   position: absolute;
   z-index: 1;
-  right: 56px;
-  top: 50%;
+  right: 7%;
+  top: 44%;
 }
+
 .swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;

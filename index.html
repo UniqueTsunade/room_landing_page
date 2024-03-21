@@ -13,7 +13,7 @@
     <div class="wrapper">
         <div class="content">
 
-    <header class="header">
+    <header class="header none">
 
         <nav class="nav">
 
@@ -96,7 +96,7 @@
     </header>
 
 
-    <section class="catalog">
+    <section class="catalog none">
 
         <div class="catalog__wrapper">
 
@@ -124,7 +124,7 @@
 
     </section>
 
-    <section class="brands">
+    <section class="brands none">
 
         <div class="brands__wrapper">
 
@@ -158,11 +158,16 @@
     <section class="slider">
 
 
+    <!-- <div class="coverflow"> 
+
     <div class="swiper">
 
         <div class="swiper-wrapper">
 
         <div class="swiper-slide"><img src="./img/slider/Rectangle-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slider/Rectangle-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/slider/Rectangle-1.jpg" alt=""></div>
+
         <div class="swiper-slide"><img src="./img/slider/Rectangle-1.jpg" alt=""></div>
         <div class="swiper-slide"><img src="./img/slider/Rectangle-1.jpg" alt=""></div>
 
@@ -178,6 +183,40 @@
             <img src="./img/slider/next.svg" alt="">
         </button>
     
+    </div>
+
+    </div> -->
+
+    <div class="coverflow">
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="./img/slider/Rectangle-1.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/slider/Rectangle-1.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/slider/Rectangle-1.jpg" />
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination"></div>
+
+            <button id="sliderPrev" class="slider__btn slider__btn--prev">
+                <img src="./img/slider/prev.svg" alt="">
+            </button>
+        
+            <button id="sliderNext" class="slider__btn slider__btn--next"> 
+                <img src="./img/slider/next.svg" alt="">
+            </button>
+        </div>
     </div>
 
     </section>

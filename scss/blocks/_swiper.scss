@@ -16,6 +16,7 @@
 }
 
 .coverflow .swiper-slide img {
+  object-fit: cover;
   width: 100%;  
   
   aspect-ratio: 1344 / 700; 

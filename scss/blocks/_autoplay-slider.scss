@@ -1,0 +1,11 @@
+.swiper-auto {
+    max-width: 1344px; 
+    max-height: 700px;
+  }
+
+  .swiper-auto-slide img {
+
+    object-fit: cover;
+    
+    aspect-ratio: 1344 / 700; 
+  }

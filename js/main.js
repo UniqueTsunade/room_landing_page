@@ -1,4 +1,4 @@
-//Swiper 
+//Swiper 1
 
   const swiper = new Swiper(".coverflow .swiper", {
     effect: "coverflow",
@@ -25,22 +25,10 @@
 
   });
 
-
-
 //Scroll 
 document.addEventListener("DOMContentLoaded", function () {
   
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-  if (ScrollTrigger.isTouch !==1) {
-    
-    ScrollSmoother.create({
-      wrapper: ".wrapper", 
-      content: ".content", 
-      smooth: 1.5,
-      effects: true,
-  })
-
+  gsap.registerPlugin(ScrollTrigger);
 
   let tt = gsap.timeline({
     scrollTrigger: {
@@ -80,9 +68,17 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
   });
 
+  });
+
+
+
+//Swiper 2
+
+const swiperAuto = new Swiper(".swiper-auto", {
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   }
 
-  
 });
-
-

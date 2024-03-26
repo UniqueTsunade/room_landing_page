@@ -3,10 +3,38 @@
     column-gap: 25px;
 }
 
+.nav-top-list__item {
+    position: relative;
+}
+
 
 .nav-top__link {
+    transition: color 0.1s ease-in;
+
     line-height: calc(33 / 12);
     letter-spacing: 1px;
 
     color: var(--nav-top-text-color);
+
+    &:hover {
+        color: var(--accent-text);
+    }
+}
+
+.nav-top-list__sub-nav {
+    opacity: 0;
+    pointer-events: none;
+    min-width: 100px;
+    position: absolute;
+    left: -30px;
+    top: 100%;
+
+    transform: translate(0%, 10%);
+    transition: all 0.2s ease-in;
+}
+
+.nav-top-list__item:hover .nav-top-list__sub-nav {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, 0%);
 }

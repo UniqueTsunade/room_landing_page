@@ -3,6 +3,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include for-desktop() {
+        margin-bottom: 130px;
+    }
+
+    @include for-mobile() {
+        margin-bottom: 70px;
+    }
+
+    @include for-phone-mini() {
+        margin-bottom: 30px;
+    }
 }
 
 .brands__title {
@@ -10,6 +22,28 @@
     font-size: 48px;
     line-height: calc(48 / 48);
     color: var(--title-color);
+
+    @include for-desktop() {
+        font-size: 38px;
+        line-height: calc(48 / 38);
+    }
+
+    @include for-tablet() {
+        font-size: 28px;
+        line-height: calc(48 / 28);
+    }
+
+    @include for-mobile() {
+        font-size: 22px;
+        line-height: calc(48 / 22);
+    }
+
+    @include for-phone-mini() {
+        text-align: center;
+        font-size: 16px;
+        line-height: calc(48 / 16);
+    }
+
 }
 
 .brands__subtitle {
@@ -17,6 +51,26 @@
     font-size: 24px;
     line-height: calc(36 / 24);
     color: #4A4A4A;
+
+    @include for-desktop() {
+        margin-bottom: 90px;
+    }
+
+    @include for-tablet() {
+        margin-bottom: 70px;
+    }
+
+    @include for-mobile() {
+        font-size: 19px;
+        line-height: calc(36 / 19);
+        margin-bottom: 50px;
+    }
+
+    @include for-phone-mini() {
+        font-size: 15px;
+        line-height: calc(36 / 15);
+        margin-bottom: 40px;
+    }
 }
 
 .brands__banner {
@@ -25,6 +79,19 @@
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     gap: 49px 43px;
+
+    @include for-tablet() {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include for-mobile() {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include for-phone-mini() {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 20px 49px 20px;
+    }
 }
 
  

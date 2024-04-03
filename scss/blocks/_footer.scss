@@ -19,8 +19,42 @@
     padding: 97px 0 51px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr 5fr;
+    grid-template-columns: 2fr 4fr 2fr 5.5fr;
     grid-row: 20px;
+
+    @include for-desktop() {
+        padding: 97px 20px 51px;
+    }
+
+    @include for-small-desktop() {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 10px;
+    }
+
+    @include for-tablet() {
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    @include for-mobile() {
+        grid-template-columns: 1fr;
+    }
+}
+
+.first-line {
+    @include for-small-desktop() {
+        justify-self: center;
+    }
+
+    @include for-mobile() {
+        justify-self: left;
+    }
+}
+
+.footer__logo {
+    @include for-standart-mobile() {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 .footer__back {
@@ -34,4 +68,8 @@
     font-size: 11px;
     line-height: calc(12 / 11);
     letter-spacing: 2.4px;
+
+    @include for-mobile() {
+        right: -50px;
+    }
 }

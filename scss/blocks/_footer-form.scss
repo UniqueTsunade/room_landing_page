@@ -9,11 +9,20 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 3px;
     resize: none;
+
+	@include for-phone-mini() {
+		width: 200px;
+	}
+
 }
 
 
 .select-wrapper {
     margin: 16px 0 56px 209px;
+
+	@include for-phone-mini() {
+		margin: 16px 0 46px 80px;
+	}
 }
 
 #country-select {
@@ -29,6 +38,10 @@
     font-size: 11px;
     line-height: calc(13 / 11);
     letter-spacing: 2px;
+
+	@include for-phone-mini() {
+		max-width: 230px;
+	}
 }
 
 input[type='checkbox'] {
@@ -94,4 +107,8 @@ label.privacy__text input[type='checkbox']:checked~span:after {
     text-transform: uppercase;
     line-height: calc(60 / 14);
     letter-spacing: 2;
+
+	@include for-phone-mini() {
+		margin-left: 140px;
+	}
 }

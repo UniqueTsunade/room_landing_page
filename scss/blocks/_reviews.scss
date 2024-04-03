@@ -9,11 +9,25 @@
     background-image: url("./../img/reviews-bg.jpg");
     background-size: cover;
     aspect-ratio: 1340 / 800;
+    overflow-y: hidden;
 
     @media 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi) { 
         background-image: url("./../img/reviews-bg@2x.jpg");
+    } 
+
+    @include for-tablet() {
+        margin: 0 20px;
+    }
+
+    @include for-mobile() {
+        overflow-y: scroll;
+    }
+
+    @include for-phone-mini() {
+        background-image: none;
+        background-color: #A5C1C2;
     }
 }
 
@@ -29,20 +43,55 @@
     margin: 0 0 7px 10px;
 }
 
+
 .reviews__text_title {
     max-width: 201px;
     margin-bottom: 8px;
     font-size: 24px;
     line-height: calc(32 / 24);
+
+    @include for-desktop() {
+        font-size: 18px;
+        line-height: calc(32 / 18);
+
+    }
+
+    @include for-tablet() {
+        font-size: 16px;
+        line-height: calc(20 / 16);
+    }
+
+    @include for-phone-mini() {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+    }
+
 }
 
 .reviews__text_brand {
     margin: 0 0 40px 10px;
+
+    @include for-desktop() {
+        margin: 0 0 10px 10px;
+        width: 67px;
+    }
+
+    @include for-tablet() {
+        width: 60px;
+    }
+
+    
+    @include for-phone-mini() {
+        width: 45px;
+    }
 }
 
 .reviews__content_btn {
     margin-left: 10px;
-    line-height: calc(16 / 12);
     letter-spacing: 0.75px;
     color: var(--white-text-color);  
+
+    @include for-mobile() {
+        font-size: 14px;
+    }
 }

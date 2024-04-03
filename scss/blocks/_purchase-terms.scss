@@ -3,6 +3,34 @@
     max-width: 1200px;
     max-height: 465px;
     background-color: var(--bg-color);
+
+    @include for-desktop() {
+        max-width: 1000px;
+    }
+
+    @include for-small-desktop()  {
+        max-width: 950px;
+    }
+
+    @include for-tablet() {
+        max-width: 660px;
+        margin: 180px auto 79px;
+    }
+
+    @include for-mobile() {
+        max-width: 500px;
+    }
+
+    @include for-standart-mobile() {
+        max-width: 400px;
+        margin: 140px auto 79px;
+    }
+
+    @include for-phone-mini() {
+        max-width: 300px;
+        max-height: max-content;
+        margin: 60px auto 79px;
+    }
 }
 
 .purchase-terms__content {
@@ -17,6 +45,21 @@
     font-size: 46px;
     line-height: calc(50 / 46);
     color: var(--deep-dark-text-color);
+
+    @include for-small-desktop()  {
+        font-size: 40px;
+        line-height: calc(50 / 40);
+    }
+
+    @include for-tablet() {
+        font-size: 36px;
+        line-height: calc(50 / 36);
+    }
+
+    @include for-phone-mini()  {
+        font-size: 28px;
+        line-height: calc(50 / 28);
+    }
 }
 
 .purchase-terms__points {
@@ -26,6 +69,22 @@
     max-width: 800px;
     column-gap: 67px;
 
+    @include for-mobile() {
+        max-width: 600px;
+        column-gap: 30px;
+    }
+
+    @include for-mobile() {
+        max-width: 100px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    @include for-phone-mini()  {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .purchase-terms__point {
@@ -33,6 +92,16 @@
     margin: 0 55px 0;
     max-width: 200px;
     max-height: 100px;
+
+    @include for-mobile() {
+        max-width: 90px;
+        max-height: 100px;
+        margin: 0 35px 0;
+    }
+
+    @include for-phone-mini()  {
+        margin-bottom: 30px;
+    } 
 }
 
 .purchase-terms__img {
@@ -42,6 +111,10 @@
 
 .purchase-terms__img_min {
     margin: 6px auto 29px;
+
+    @include for-mobile() {
+        min-width: 63px;
+    }
 }
 
 .purchase-terms__description {
@@ -50,6 +123,7 @@
     letter-spacing: 0.75px;
     text-align: center;
     color: var(--title-color);
+
 }
 
 .purchase-terms__btn {

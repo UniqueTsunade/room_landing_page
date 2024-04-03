@@ -1,5 +1,18 @@
 .presentation__wrapper {
-    margin: 240px 72px 288px;
+    margin: 240px 0 288px;
+    overflow: hidden;
+
+    @include for-tablet() {
+        margin: 180px 0;
+    }
+
+    @include for-standart-mobile() {
+        margin: 140px 0;
+    }
+
+    @include for-phone-mini() {
+        margin: 60px 0;
+    }
 }
 
 .presentation__text {
@@ -7,6 +20,32 @@
     margin: 0 auto;
     font-size: 46px;
     line-height: calc(52 / 46);
+
+    @include for-desktop() {
+        font-size: 40px;
+        line-height: calc(52 / 40);
+    }
+
+    @include for-small-desktop() {
+        font-size: 30px;
+        line-height: calc(52 / 30);
+    }
+
+    @include for-tablet() {
+        font-size: 28px;
+        line-height: calc(48 / 28);
+        padding: 0 20px;
+    }
+
+    @include for-standart-mobile() {
+        font-size: 24px;
+        line-height: calc(38 / 24);
+    }
+
+    @include for-rare-phone-mini()  {
+        font-size: 22px;
+        line-height: calc(38 / 22);
+    }
 }
 
 .presentation__description {
@@ -18,4 +57,12 @@
     max-width: 861px;
     margin-bottom: 135px;
     color: var(--deep-dark-text-color);
+
+    @include for-small-desktop() {
+        margin-bottom: 90px;
+    }
+
+    @include for-tablet() {
+        margin-bottom: 60px;
+    }
 }

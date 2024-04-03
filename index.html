@@ -1,616 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Room</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="content">
+      <div class="content">
 
-            <header id="comeBack" class="header">
-
-        <nav class="nav">
-
+        <header id="comeBack" class="header">
+          <nav class="nav">
             <div class="nav-top">
+              <ul class="nav-top-list">
+                <li class="nav-top-list__item">
+                  <a href="#!" class="nav-top__link">Contact Sales</a>
+                </li>
 
-                <ul class="nav-top-list">
+                <li class="nav-top-list__item">
+                  <a href="#!" class="nav-top__link">TEL 646-791-3726</a>
+                </li>
 
-                    <li class="nav-top-list__item">
-                        <a href="#!" class="nav-top__link">Contact Sales</a>
-                    </li>
-                    
-                    <li class="nav-top-list__item">
-                        <a href="#!" class="nav-top__link">TEL 646-791-3726</a>
-                    </li>
+                <li class="nav-top-list__item">
+                  <a href="#!" class="nav-top__link nav-top__link--dropdown">
+                    US
+                    <img
+                      class="nav-top__link_more"
+                      src="./img/icons/more.svg"
+                      alt="more"
+                    />
+                  </a>
 
-                    <li class="nav-top-list__item">
-                        <a href="#!" class="nav-top__link nav-top__link--dropdown">US</a>
-
-                        <div class="nav-top-list__sub-nav">
-                            <ul class="sub-nav">
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">US / CA</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">UK</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">IE</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">CH</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">FR / BE / LU</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">DE / AT</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">NL</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">NO</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">SE</a></li>
-                                <li class="sub-nav_item"><a href="#!" class="sub-nav__link">AU / NZ</a></li>
-
-                            </ul>
-                        </div>
-
-                    </li>
-
-                </ul>
-
+                  <div class="nav-top-list__sub-nav">
+                    <ul class="sub-nav">
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">US / CA</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">UK</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">IE</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">CH</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">FR / BE / LU</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">DE / AT</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">NL</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">NO</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">SE</a>
+                      </li>
+                      <li class="sub-nav_item">
+                        <a href="#!" class="sub-nav__link">AU / NZ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </div>
-
-            
 
             <div class="nav-bottom">
+              <a class="nav-bottom__logo" href="#!">
+                <img src="./img/icons/logo.png" alt="" />
+              </a>
 
-                <a href="#!">
-                    <img src="./img/icons/logo.png" alt="">
-                </a>
+              <ul class="nav-bottom-list">
+                <li class="nav-bottom-list__item">
+                  <a href="#!" class="nav-bottom-list__link">Products</a>
+                </li>
 
-                <ul class="nav-bottom-list">
+                <li class="nav-bottom-list__item">
+                  <a href="#!" class="nav-bottom-list__link">Explore</a>
+                </li>
 
-                    <li class="nav-bottom-list__item">
-                        <a href="#!" class="nav-bottom-list__link">Products</a>
-                    </li>
+                <li class="nav-bottom-list__item">
+                  <a href="#!" class="nav-bottom-list__link">Shop</a>
+                </li>
+              </ul>
 
-                    <li class="nav-bottom-list__item">
-                        <a href="#!" class="nav-bottom-list__link">Explore</a>
-                    </li>
-
-                    <li class="nav-bottom-list__item">
-                        <a href="#!" class="nav-bottom-list__link">Shop</a>
-                    </li>
-
-                </ul>
-
-
-                <div class="nav-bottom__icons">
-
+              <div class="nav-bottom__icons">
                 <a class="map-icon" href="#!">
-                    <img src="./img/icons/map.svg" alt="map">
+                  <img src="./img/icons/map.svg" alt="map" />
                 </a>
-    
+
                 <a class="map-icon_text" href="#!">Showrooms</a>
-    
-                <a href="#!">
-                    <img src="./img/icons/cart.svg" alt="cart">
+
+                <a class="cart-icon" href="#!">
+                  <img src="./img/icons/cart.svg" alt="cart" />
                 </a>
-                
-                </div>
 
+                <button id="open-mobile-nav-btn" class="nav__btn">
+                  <img
+                    class="open-menu"
+                    src="./img/icons/menu.png"
+                    alt="menu"
+                  />
+                </button>
+              </div>
             </div>
+          </nav>
 
-
-
-        </nav>
-
-        <div  class="header-content">
-
-            <img class="header-content__img" src="./img/header-img.jpg" alt="header-img">
+          <div class="header-content">
+            <img
+              class="header-content__img"
+              src="./img/header-img.jpg"
+              alt="header-img"
+            />
 
             <div class="header-content__text">
-                <h1 class="header-content__title">Design that inspires a better way to work.</h1>
-                <h2 class="header-content-description">We've developed a series of purpose-built rooms that offer companies looking for change an affordable, sustainable, and flexible alternative to fixed construction and traditional office design.</h2>
+              <h1 class="header-content__title">
+                Design that inspires a better way to work.
+              </h1>
+              <h2 class="header-content-description">
+                We've developed a series of purpose-built rooms that offer
+                companies looking for change an affordable, sustainable, and
+                flexible alternative to fixed construction and traditional
+                office design.
+              </h2>
+            </div>
+          </div>
+
+          <div id="mobile-nav" class="mobile-nav">
+            <div class="mobile-nav__header">
+              <a class="mobile-cart">
+                <div href="#!">
+                  <img src="./img/icons/cart.svg" alt="cart" />
+                </div>
+              </a>
+
+              <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+                <img src="./img/icons/close.png" alt="" />
+              </button>
             </div>
 
-        </div>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="#!" class="mobile-nav__link">Products</a>
+              </li>
 
-            </header>
+              <li class="mobile-nav__item">
+                <a href="#!" class="mobile-nav__link">Explore</a>
+              </li>
 
+              <li class="mobile-nav__item">
+                <a href="#!" class="mobile-nav__link">Shop</a>
+              </li>
 
-            <section class="catalog">
+              <li class="mobile-nav__item_map">
+                <a class="map-icon" href="#!">
+                  <img src="./img/icons/map.svg" alt="map" />
+                </a>
 
-        <div class="catalog__wrapper">
+                <a class="map-icon_text" href="#!">Showrooms</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="catalog">
+          <div class="catalog__wrapper">
+            <div class="catalog-page">
+              <img
+                class="catalog-page__img"
+                src="./img/phone-booth.jpg"
+                alt=""
+              />
+              <h2>Phone Booth</h2>
+            </div>
 
             <div class="catalog-page">
-                <img class="catalog-page__img" src="./img/phone-booth.jpg" alt="">
-                <h2>Phone Booth</h2>
+              <img
+                class="catalog-page__img"
+                src="./img/focus-room.jpg"
+                alt=""
+              />
+              <h2>Focus Room</h2>
             </div>
 
             <div class="catalog-page">
-                <img class="catalog-page__img" src="./img/focus-room.jpg" alt="">
-                <h2>Focus Room</h2>
+              <img
+                class="catalog-page__img"
+                src="./img/meeting-room.jpg"
+                alt=""
+              />
+              <h2>Meeting Room</h2>
             </div>
 
             <div class="catalog-page">
-                <img class="catalog-page__img" src="./img/meeting-room.jpg" alt="">
-                <h2>Meeting Room</h2>
+              <img
+                class="catalog-page__img"
+                src="./img/open-meeting-room.jpg"
+                alt=""
+              />
+              <h2>Open Meeting Room</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="brands">
+          <div class="brands__wrapper">
+            <h1 class="brands__title">
+              The world's leading brands choose ROOM.
+            </h1>
+            <h2 class="brands__subtitle">Over 3,000 and counting.</h2>
+
+            <div class="brands__banner">
+              <img src="./img/icons/brands/nike.svg" alt="nike" />
+              <img src="./img/icons/brands/nasa.svg" alt="nasa" />
+              <img src="./img/icons/brands/google.svg" alt="google" />
+              <img src="./img/icons/brands/uber.svg" alt="uber" />
+              <img src="./img/icons/brands/walmart.svg" alt="walmart" />
+              <img src="./img/icons/brands/salesforce.svg" alt="salesforce" />
+              <img src="./img/icons/brands/hulu.svg" alt="hulu" />
+              <img src="./img/icons/brands/reddit.svg" alt="reddit" />
+              <img src="./img/icons/brands/knotel.svg" alt="knotel" />
+              <img src="./img/icons/brands/samsung.svg" alt="samsung" />
+              <img src="./img/icons/brands/amazon.svg" alt="amazon" />
+              <img src="./img/icons/brands/angellist.svg" alt="angellist" />
+              <img src="./img/icons/brands/buzzfeed.svg" alt="buzzfeed" />
+              <img src="./img/icons/brands/apple.svg" alt="apple" />
+              <img src="./img/icons/brands/harrys.svg" alt="harrys" />
+              <img src="./img/icons/brands/asana.svg" alt="asana" />
+              <img src="./img/icons/brands/morgan.svg" alt="morgan" />
+              <img src="./img/icons/brands/greenpeace.svg" alt="greenpeace" />
+            </div>
+          </div>
+        </section>
+
+        <section class="slider">
+          <div class="coverflow">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/slider/Rectangle-1.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/slider/Rectangle-2.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./img/slider/Rectangle-3.jpg" />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <button id="sliderPrev" class="slider__btn slider__btn--prev">
+                <img src="./img/slider/prev.svg" alt="" />
+              </button>
+
+              <button id="sliderNext" class="slider__btn slider__btn--next">
+                <img src="./img/slider/next.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <div class="advantages__wrapper">
+            <div class="advantages__text">
+              <h1 class="advantages__title">
+                Our simple and seamless modular products allow teams to shape
+                and then reshape their work environment with ease.
+              </h1>
+              <a class="advantages__btn" href="#!">GET IN TOUCH</a>
             </div>
 
-            <div class="catalog-page">
-                <img class="catalog-page__img" src="./img/open-meeting-room.jpg" alt="">
-                <h2>Open Meeting Room</h2>
+            <div class="advantages-points">
+              <div class="advantages__point">
+                <img
+                  class="advantages-points__img"
+                  src="./img/icons/cost.svg"
+                  alt="cost"
+                />
+                <h2 class="advantages-points__title">Cost-effective</h2>
+                <p class="advantages-points__description">
+                  At a fraction of the cost of traditional construction, our
+                  pre-fab solutions create additional space for focused work and
+                  collaboration without constant noise, debris and distraction.
+                </p>
+              </div>
+
+              <div class="advantages__point">
+                <img
+                  class="advantages-points__img"
+                  src="./img/icons/time.svg"
+                  alt="time"
+                />
+                <h2 class="advantages-points__title">Time Saving</h2>
+                <p class="advantages-points__description">
+                  Thoughtful design ensures simple installation in a few hours
+                  or less. And, because our products are safety ensured, you'll
+                  never have to spend time or money chasing after permits,
+                  contractors, and more.
+                </p>
+              </div>
+
+              <div class="advantages__point">
+                <img
+                  class="advantages-points__img"
+                  src="./img/icons/flex.svg"
+                  alt="flexible"
+                />
+                <h2 class="advantages-points__title">Flexible</h2>
+                <p class="advantages-points__description">
+                  Unlike traditional construction, our purpose-built products
+                  were designed to adapt with your workspace and can easily be
+                  positioned in various places throughout your office, or to an
+                  entirely new location.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="reviews__wrapper">
+            <div class="reviews__content">
+              <div class="reviews__text">
+                <div class="reviews__text_grade">
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+                </div>
+
+                <h2 class="reviews__text_title">
+                  “We can now have meetings in peace.”
+                </h2>
+                <img
+                  class="reviews__text_brand"
+                  src="./img/icons/google.svg"
+                  alt="google"
+                />
+              </div>
+
+              <div class="reviews__text">
+                <div class="reviews__text_grade">
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+                </div>
+
+                <h2 class="reviews__text_title">
+                  “Amazing private space to get work done.”
+                </h2>
+                <img
+                  class="reviews__text_brand"
+                  src="./img/icons/wayfair.svg"
+                  alt="wayfair"
+                />
+              </div>
+
+              <div class="reviews__text">
+                <div class="reviews__text_grade">
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/icons/star.svg  21w,
+                      ./img/icons/star2.svg 17w,
+                      ./img/icons/star2.svg 14w
+                    "
+                    sizes="
+                                    (max-width: 650px) 14px,
+                                    (max-width: 992px) 17px,
+                                    (min-width: 992px) 21px
+                                    "
+                    src="./img/icons/star.svg"
+                    alt="star"
+                  />
+                </div>
+
+                <h2 class="reviews__text_title">
+                  “Our booths are in constant use.”
+                </h2>
+                <img
+                  class="reviews__text_brand"
+                  src="./img/icons/flexport.svg"
+                  alt="flexport"
+                />
+              </div>
+
+              <a class="reviews__content_btn" href="#!">READ MORE REVIEWS</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="presentation">
+          <div class="presentation__wrapper">
+            <div class="presentation__text">
+              <h2 class="presentation__description">
+                We take a human approach to a <br />
+                business-to-business industry, breaking the boundaries between
+                corporate and personal, and rethinking every step of the user
+                experience along the way.
+              </h2>
+              <h1 class="presentation__title">We make work, work for you.</h1>
             </div>
 
-        </div>
+            <div class="presentation-content">
+              <div class="presentation-content__card">
+                <img
+                  class="presentation-content__img"
+                  src="./img/sell.jpg"
+                  alt=""
+                />
 
-            </section>
+                <div
+                  id="first"
+                  class="presentation-content__text presentation-content__text_right"
+                >
+                  <h3 class="presentation-content__point">We sell direct.</h3>
+                  <p class="presentation-content__description">
+                    We make extra room in the budget without compromising
+                    quality by selling direct. No middle man, and no additional
+                    construction required.
+                  </p>
+                </div>
+              </div>
 
-            <section class="brands">
-
-                <div class="brands__wrapper">
-
-                    <h1 class="brands__title">The world's leading brands choose ROOM.</h1>
-                    <h2 class="brands__subtitle">Over 3,000 and counting.</h2>
-
-                    <div class="brands__banner">
-                        <img src="./img/icons/brands/nike.svg" alt="nike">
-                        <img src="./img/icons/brands/nasa.svg" alt="nasa">
-                        <img src="./img/icons/brands/google.svg" alt="google">
-                        <img src="./img/icons/brands/uber.svg" alt="uber">
-                        <img src="./img/icons/brands/walmart.svg" alt="walmart">
-                        <img src="./img/icons/brands/salesforce.svg" alt="salesforce">
-                        <img src="./img/icons/brands/hulu.svg" alt="hulu">
-                        <img src="./img/icons/brands/reddit.svg" alt="reddit">
-                        <img src="./img/icons/brands/knotel.svg" alt="knotel">
-                        <img src="./img/icons/brands/samsung.svg" alt="samsung">
-                        <img src="./img/icons/brands/amazon.svg" alt="amazon">
-                        <img src="./img/icons/brands/angellist.svg" alt="angellist">
-                        <img src="./img/icons/brands/buzzfeed.svg" alt="buzzfeed">
-                        <img src="./img/icons/brands/apple.svg" alt="apple">
-                        <img src="./img/icons/brands/harrys.svg" alt="harrys">
-                        <img src="./img/icons/brands/asana.svg" alt="asana">
-                        <img src="./img/icons/brands/morgan.svg" alt="morgan">
-                        <img src="./img/icons/brands/greenpeace.svg" alt="greenpeace">
-                    </div>
+              <div
+                class="presentation-content__card presentation-content__card_second"
+              >
+                <div
+                  class="presentation-content__text presentation-content__text_left"
+                >
+                  <h3 class="presentation-content__point">
+                    We build with purpose.
+                  </h3>
+                  <p class="presentation-content__description">
+                    We’re not just building another room with four walls, we’re
+                    building a more productive workspace. We design with you in
+                    mind, looking at every detail as an opportunity to enable a
+                    better working environment for everyone.
+                  </p>
                 </div>
 
-            </section>
+                <img
+                  class="presentation-content__img"
+                  src="./img/build.jpg"
+                  alt=""
+                />
+              </div>
 
-            <section class="slider">
+              <div
+                class="presentation-content__card presentation-content__card_hidden"
+              >
+                <img
+                  class="presentation-content__img"
+                  src="./img/build.jpg"
+                  alt=""
+                />
 
-            <div class="coverflow">
-
-                <div class="swiper">
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <img src="./img/slider/Rectangle-1.jpg" />
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/slider/Rectangle-1.jpg" />
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/slider/Rectangle-1.jpg" />
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <button id="sliderPrev" class="slider__btn slider__btn--prev">
-                        <img src="./img/slider/prev.svg" alt="">
-                    </button>
-                
-                    <button id="sliderNext" class="slider__btn slider__btn--next"> 
-                        <img src="./img/slider/next.svg" alt="">
-                    </button>
+                <div
+                  class="presentation-content__text presentation-content__text_left"
+                >
+                  <h3 class="presentation-content__point">
+                    We build with purpose.
+                  </h3>
+                  <p class="presentation-content__description">
+                    We’re not just building another room with four walls, we’re
+                    building a more productive workspace. We design with you in
+                    mind, looking at every detail as an opportunity to enable a
+                    better working environment for everyone.
+                  </p>
                 </div>
+              </div>
+
+              <div class="presentation-content__card">
+                <img
+                  class="presentation-content__img"
+                  src="./img/design.jpg"
+                  alt=""
+                />
+
+                <div
+                  id="last"
+                  class="presentation-content__text presentation-content__text_right"
+                >
+                  <h3 class="presentation-content__point">
+                    We design sustainably.
+                  </h3>
+                  <p class="presentation-content__description">
+                    From design to delivery, we strive to lessen our impact on
+                    the environment. Our products are engineered with recycled
+                    materials and replace multiple cycles of construction,
+                    minimizing noise and our footprint.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="autoplay-slider">
+          <div class="swiper swiper-auto">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-auto-slide">
+                <img src="./img/slider-auto/slider-auto.jpg" alt="" />
+              </div>
+              <div class="swiper-slide swiper-auto-slide">
+                <img src="./img/slider-auto/slider-auto2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide swiper-auto-slide">
+                <img src="./img/slider-auto/slider-auto3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="purchase-terms">
+          <div class="purchase-terms__wrapper">
+            <div class="purchase-terms__content">
+              <h1 class="purchase-terms__title">100 day risk-free trial</h1>
+
+              <div class="purchase-terms__points">
+                <div class="purchase-terms__point">
+                  <img
+                    class="purchase-terms__img"
+                    src="./img/icons/shipping.svg"
+                    alt="shipping"
+                  />
+                  <h4 class="purchase-terms__description">FREE SHIPPING</h4>
+                </div>
+
+                <div class="purchase-terms__point">
+                  <img
+                    class="purchase-terms__img purchase-terms__img_min"
+                    src="./img/icons/plug.svg"
+                    alt="plug"
+                  />
+                  <h4 class="purchase-terms__description">PLUG & PLAY</h4>
+                </div>
+
+                <div class="purchase-terms__point">
+                  <img
+                    class="purchase-terms__img"
+                    src="./img/icons/returns.svg"
+                    alt="returns"
+                  />
+                  <h4 class="purchase-terms__description">FREE RETURNS</h4>
+                </div>
+              </div>
+
+              <a class="purchase-terms__btn" href="#!">GET A ROOM</a>
+              <p class="purchase-terms__text">Terms & Conditions apply</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__wrapper">
+            <img
+              class="footer__logo first-line"
+              src="./img/icons/logo-bg.svg"
+              alt=""
+            />
+
+            <div class="footer-info">
+              <ul class="footer-info-list">
+                <li class="footer-info-list__list footer-info-list__list_title">
+                  <a class="footer-info-list__link" href="#!">About</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Compare</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Reviews</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!"
+                    >Risk-Free Trial</a
+                  >
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Careers</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Press</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Podcast</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Blog</a>
+                </li>
+              </ul>
+
+              <ul class="footer-info-list">
+                <li class="footer-info-list__list footer-info-list__list_title">
+                  <a class="footer-info-list__link" href="#!">Support</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">FAQ</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Booth Assembly</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Delivery</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Room Service</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Warranty</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Terms of Use</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Privacy Policy</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Copyright</a>
+                </li>
+              </ul>
+
+              <ul class="footer-info-list">
+                <li class="footer-info-list__list footer-info-list__list_title">
+                  <a class="footer-info-list__link" href="#!">Showrooms</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">New York</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">London</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">San Francisco</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Paris</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Copenhagen</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Zürich</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Los Angeles</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Berlin</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Belgium</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!">Virtual Demo</a>
+                </li>
+              </ul>
+
+              <ul class="footer-info-list">
+                <li class="footer-info-list__list footer-info-list__list_title">
+                  <a class="footer-info-list__link" href="#!">Office</a>
+                </li>
+
+                <li class="footer-info-list__list">
+                  <a class="footer-info-list__link" href="#!"
+                    >599 Broadway, FL 9 New York, NY 10012</a
+                  >
+                </li>
+              </ul>
             </div>
 
-            </section>
+            <div class="footer-socials first-line">
+              <p class="footer-socials__text">Follow us</p>
+              <div class="footer-socials__wrapper">
+                <img src="./img/icons/fb.svg" alt="Facebook" />
+                <img src="./img/icons/inst.svg" alt="Instagram" />
+                <img src="./img/icons/in.svg" alt="In" />
+                <img src="./img/icons/pin.svg" alt="Pinterest" />
+              </div>
+            </div>
 
-            <section class="advantages">
+            <div class="footer-form">
+              <form>
+                <p class="footer-form__text">Join our mailing list</p>
+                <p class="footer-form__text">
+                  Be the first to hear everything about ROOM.
+                </p>
 
-                <div class="advantages__wrapper">
-                    
+                <textarea name="join" id="join-form"></textarea>
 
-                    <div class="advantages__text">
-
-                    <h1 class="advantages__title">Our simple and seamless modular products allow teams to shape and then reshape their work environment with ease.</h1>
-                    <a class="advantages__btn" href="#!">GET IN TOUCH</a>
-
-                    </div>
-
-
-                    <div class="advantages-points">
-
-                        <div class="advantages__point">
-
-                            <img class="advantages-points__img" src="./img/icons/cost.svg" alt="cost">
-                            <h2 class="advantages-points__title">Cost-effective</h2>
-                            <p class="advantages-points__description">At a fraction of the cost of traditional construction, our pre-fab solutions create additional space for focused work and collaboration without constant noise, debris and distraction.</p>
-
-                        </div> 
-
-                        <div class="advantages__point">
-
-                            <img class="advantages-points__img" src="./img/icons/time.svg" alt="cost">
-                            <h2 class="advantages-points__title">Time Saving</h2>
-                            <p class="advantages-points__description">Thoughtful design ensures simple installation in a few hours or less. And, because our products are safety ensured, you'll never have to spend time or money chasing after permits, contractors, and more.</p>
-
-                        </div> 
-
-                        <div class="advantages__point">
-
-                            <img class="advantages-points__img" src="./img/icons/flex.svg" alt="cost">
-                            <h2 class="advantages-points__title">Flexible</h2>
-                            <p class="advantages-points__description">Unlike traditional construction, our purpose-built products were designed to adapt with your workspace and can easily be positioned in various places throughout your office, or to an entirely new location.</p>
-
-                        </div> 
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="reviews">
-
-
-                <div class="reviews__wrapper">
-
-                    <div class="reviews__content">
-
-                        <div class="reviews__text">
-                            
-                            <div class="reviews__text_grade">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                            </div>
-                            <h2 class="reviews__text_title">“We can now have meetings in peace.”</h2>
-                            <img class="reviews__text_brand" src="./img/icons/google.svg" alt="google">
-
-                        </div>
-
-                        <div class="reviews__text">
-                            
-                            <div class="reviews__text_grade">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                            </div>
-                            <h2 class="reviews__text_title">“Amazing private space to get work done.”</h2>
-                            <img class="reviews__text_brand" src="./img/icons/wayfair.svg" alt="wayfair">
-
-                        </div>
-
-                        <div class="reviews__text">
-                            
-                            <div class="reviews__text_grade">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                                <img src="./img/icons/star.svg" alt="star">
-                            </div>
-                            <h2 class="reviews__text_title">“Our booths are in constant use.”</h2>
-                            <img class="reviews__text_brand" src="./img/icons/flexport.svg" alt="flexport">
-
-                        </div>
-
-                        <a class="reviews__content_btn" href="#!">READ MORE REVIEWS</a>
-
-                    </div>
-
-                </div>
-                
-            </section>
-
-            <section class="presentation">
-
-                    <div class="presentation__wrapper">
-
-
-                        <div class="presentation__text">
-            
-                        <h2 class="presentation__description">We take a human approach to a <br> business-to-business industry, breaking the boundaries between corporate and personal, and rethinking every step of the user experience along the way.</h2>
-                        <h1 class="presentation__title">We make work, work for you.</h1>
-            
-                        </div>
-            
-                        <div class="presentation-content">
-            
-            
-                        <div class="presentation-content__card">
-            
-                            <img src="./img/sell.jpg" alt="">
-            
-                            <div id="first" class="presentation-content__text presentation-content__text_right">
-                            <h3 class="presentation-content__point">We sell direct.</h3>
-                            <p class="presentation-content__description">We make extra room in the budget without compromising quality by selling direct. No middle man, and no additional construction required.</p>
-                            </div>
-            
-                        </div>
-            
-                        <div class="presentation-content__card">
-            
-                            <div class="presentation-content__text presentation-content__text_left">
-                            <h3 class="presentation-content__point">We build with purpose.</h3>
-                            <p class="presentation-content__description">We’re not just building another room with four walls, we’re building a more productive workspace. We design with you in mind, looking at every detail as an opportunity to enable a better working environment for everyone.</p>
-                            </div>
-            
-                            <img src="./img/build.jpg" alt="">
-            
-                        </div>
-            
-                        <div class="presentation-content__card">
-            
-                            <img src="./img/design.jpg" alt="">
-            
-                            <div id="last" class="presentation-content__text presentation-content__text_right">
-                            <h3 class="presentation-content__point">We design sustainably.</h3>
-                            <p class="presentation-content__description">From design to delivery, we strive to lessen our impact on the environment. Our products are engineered with recycled materials and replace multiple cycles of construction, minimizing noise and our footprint.</p>
-                            </div>
-            
-                        </div>
-            
-            
-                        </div>
-            
-                    </div>
-
-            </section>
-  
-            
-
-            <section class="autoplay-slider">
-                    
-                <div class="swiper swiper-auto">
-                    
-                    <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide swiper-auto-slide"><img src="./img/slider-auto/slider-auto.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-auto-slide"><img src="./img/slider-auto/slider-auto2.jpg" alt=""></div>
-                    <div class="swiper-slide swiper-auto-slide"><img src="./img/slider-auto/slider-auto3.jpg" alt=""></div>
-                    
-                    </div>
-
+                <div class="select-wrapper">
+                  <select required name="country" id="country-select">
+                    <option id="country-option" value="">United States</option>
+                    <option value="">United Kingdom</option>
+                    <option value="">France</option>
+                    <option value="">Denmark</option>
+                    <option value="">Switzerland</option>
+                    <option value="">Germany</option>
+                    <option value="">Belgium</option>
+                  </select>
                 </div>
 
-            </section>
+                <label class="privacy__text" for="privacy">
+                  <input type="checkbox" id="privacy" /><span></span>
+                  Yes. I would like to receive marketing communications from
+                  ROOM about product updates and special offers. Please refer to
+                  ROOM’s Privacy Policy for more information about how we
+                  process your data (including how to unsubscribe).
+                </label>
 
-            <section class="purchase-terms">
+                <button class="footer-form__submit" type="submit">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
 
-                <div class="purchase-terms__wrapper">
-
-                    <div class="purchase-terms__content">
-
-                        <h1 class="purchase-terms__title">100 day risk-free trial</h1>
-
-                        <div class="purchase-terms__points"> 
-
-                            <div class="purchase-terms__point">
-                                <img class="purchase-terms__img" src="./img/icons/shipping.svg" alt="shipping">
-                                <h4 class="purchase-terms__description">FREE SHIPPING</h4>
-                            </div>
-
-                            <div class="purchase-terms__point">
-                                <img class="purchase-terms__img purchase-terms__img_min" src="./img/icons/plug.svg" alt="plug">
-                                <h4 class="purchase-terms__description">PLUG & PLAY</h4>
-                            </div>
-
-                            <div class="purchase-terms__point">
-                                <img class="purchase-terms__img" src="./img/icons/returns.svg" alt="returns">
-                                <h4 class="purchase-terms__description">FREE RETURNS</h4>
-                            </div>
-
-                        </div>
-
-                    <a class="purchase-terms__btn" href="#!">GET A ROOM</a>
-                    <p class="purchase-terms__text">Terms & Conditions apply</p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <footer class="footer">
-
-                <div class="footer__wrapper">
-                    <img src="./img/icons/logo-bg.svg" alt="">
-
-                    <div class="footer-info">
-
-                        <ul class="footer-info-list">
-
-                            <li class="footer-info-list__list footer-info-list__list_title">
-                                <a class="footer-info-list__link " href="#!">About</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Compare</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Reviews</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Risk-Free Trial</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Careers</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Press</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Podcast</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Blog</a>
-                            </li>
-                        </ul>
-
-
-                        <ul class="footer-info-list">
-
-                            <li class="footer-info-list__list footer-info-list__list_title">
-                                <a class="footer-info-list__link" href="#!">Support</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">FAQ</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Booth Assembly</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Delivery</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Room Service</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Warranty</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Terms of Use</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Privacy Policy</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Copyright</a>
-                            </li>
-
-                        </ul>
-
-                        <ul class="footer-info-list">
-
-                            <li class="footer-info-list__list footer-info-list__list_title">
-                                <a class="footer-info-list__link" href="#!">Showrooms</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">New York</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">London</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">San Francisco</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Paris</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Copenhagen</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Zürich</a>
-                            </li>
-                            
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Los Angeles</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Berlin</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Belgium</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">Virtual Demo</a>
-                            </li>
-
-                        </ul>
-
-
-                        <ul class="footer-info-list">
-
-                            <li class="footer-info-list__list footer-info-list__list_title">
-                                <a class="footer-info-list__link" href="#!">Office</a>
-                            </li>
-
-                            <li class="footer-info-list__list">
-                                <a class="footer-info-list__link" href="#!">599 Broadway, FL 9 New York, NY 10012</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-socials">
-                        <p class="footer-socials__text">Follow us</p>
-                        <div class="footer-socials__wrapper">
-                            <img src="./img/icons/fb.svg" alt="Facebook">
-                            <img src="./img/icons/inst.svg" alt="Instagram">
-                            <img src="./img/icons/in.svg" alt="In">
-                            <img src="./img/icons/pin.svg" alt="Pinterest">
-                        </div>
-                    </div>
-
-                    <div class="footer-form">
-
-                        <form>
-
-                            <p class="footer-form__text">Join our mailing list</p>
-                            <p class="footer-form__text">Be the first to hear everything about ROOM.</p>
-
-                            <textarea name="join" id="join-form"></textarea>
-
-                            <div class="select-wrapper">
-                            <select required name="country" id="country-select">
-                                <option id="country-option" value="">United States</option>
-                                <option value="">United Kingdom</option>
-                                <option value="">France</option>
-                                <option value="">Denmark</option>
-                                <option value="">Switzerland</option>
-                                <option value="">Germany</option>
-                                <option value="">Belgium</option>
-                            </select>
-                            </div>
-
-                            <label class="privacy__text" for="privacy">
-                            <input type="checkbox" id="privacy"><span></span>
-                            Yes. I would like to receive marketing communications from ROOM about product updates and special offers. Please refer to ROOM’s Privacy Policy for more information about how we process your data (including how to unsubscribe).
-                            </label>
-
-                            <button class="footer-form__submit" type="submit">Sign Up</button>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-                <a class="footer__back" href="#comeBack">Return to the top</a>
-
-            </footer>
-
-        </div>
+          <a class="footer__back" href="#comeBack">Return to the top</a>
+        </footer>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -618,5 +963,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="libs/gsap/ScrollSmoother.min.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>

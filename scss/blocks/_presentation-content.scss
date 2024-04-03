@@ -1,13 +1,28 @@
 .presentation-content {
     max-width: 1200px;
     margin: 0 auto;
+
+    @include for-desktop() {
+        max-width: 1000px;
+    }
+
+    @include for-small-desktop() {
+        padding: 0 20px;
+    }
+
+    @include for-tablet() {
+        padding: 0 20px;
+    }
 }
 
 .presentation-content__card {
     display: flex;
-
         &:not(:first-child) {
             margin-top: 64px;
+        }
+
+        @include for-tablet() {
+            flex-direction: column;
         }
 }
 
@@ -15,27 +30,92 @@
     display: flex;
     flex-direction: column;
     row-gap: 27px;
-    padding: 110px;
-}
+    padding: 0 110px;
+    align-self: center;
+   
 
-presentation-content__text_left {
-    padding-left: 110px;
-    padding-right: 110px;
+    @include for-desktop() {
+        padding: 0 80px;
+    }
+
+    @include for-small-desktop() {
+        padding: 0 50px;
+    }
+
+    @include for-tablet() {
+        padding: 0;
+    }
+} 
+
+.presentation-content__img {
+    height: fit-content;
+
+    @include for-desktop() {
+        max-width: 65%;
+    }
+
+    @include for-tablet() {
+        max-width: 80%;
+    }
+
+
 }
 
 .presentation-content__text_left {
     padding-left: 110px;
     padding-right: 121px;
+
+    @include for-small-desktop() {
+        padding: 0 50px;
+    }
+
+    @include for-desktop() {
+        padding-left: 80px;
+        padding-right: 90px;
+    }
+
+    @include for-tablet() {
+        padding: 0;
+    }
 }
+
 
 .presentation-content__point {
     font-size: 32px;
-    line-height: calc(36 / 32) 36px;
+    line-height: calc(36 / 32);
     color: var(--title-color);
+
+    @include for-small-desktop() {
+        font-size: 28px;
+        line-height: calc(36 / 25);
+    }
+
+    @include for-tablet() {
+        font-size: 25px;
+        line-height: calc(36 / 28);
+    }
 }
 
 .presentation-content__description {
-    // max-width: 298px;
     line-height: calc(24 / 16);
     color: var(--text-color);
+
+    // @include for-tablet() {
+    //     display: inline-flex;
+    // }
+}
+
+.presentation-content__card_hidden {
+    display: none;
+
+    @include for-tablet() {
+        display: flex;
+    }
+
+}
+
+.presentation-content__card_second {
+    @include for-tablet() {
+        display: none;
+    }
 }

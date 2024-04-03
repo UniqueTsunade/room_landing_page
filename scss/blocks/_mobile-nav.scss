@@ -1,0 +1,45 @@
+.mobile-nav {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 40px;
+    bottom: 0;
+    width: 212px;
+    padding: 30px 20px;
+    background-color: var(--nav-bottom-bg);
+    font-size: 16px;
+
+    a {
+        color: var(--title-color);
+    }
+
+
+    &--open {
+        display: block;
+    }
+
+    @include for-phone-mini() {
+        font-size: 14px;
+    }
+
+}
+
+.mobile-nav__list {
+    display: grid;
+    gap: 20px;
+}
+
+.mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
+.mobile-nav__item_map {
+    display: flex;
+    border-top: 1px solid;
+    padding-top: 15px;
+}

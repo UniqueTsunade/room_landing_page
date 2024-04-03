@@ -1,8 +1,13 @@
 .nav-top {
-    padding-right: 51px;
+    padding-right: 33px;
     height: 40px;
     display: flex;
     justify-content: end;
     align-items: center;
     background-color: var(--nav-top-bg);
+
+
+    @include for-rare-phone-mini() {
+        padding: 0 20px 0 3px;
+    }
 }

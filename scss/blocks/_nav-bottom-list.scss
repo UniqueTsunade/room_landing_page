@@ -1,6 +1,10 @@
 .nav-bottom-list {
     display: flex;
     column-gap: 100px;
+
+    @include for-tablet() {
+        display: none;
+    }
 }
 
 .nav-bottom-list__link {

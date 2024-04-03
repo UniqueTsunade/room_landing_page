@@ -5,6 +5,26 @@
     padding: 0 33px 0 125px;
     height: 99px;
     border-bottom: 1px solid #E0E0E0;
+
+    @include for-tablet() {
+        padding: 0 33px;
+    }
+
+    @include for-rare-phone-mini() {
+        padding: 0 20px 0 15px;
+    }
+}
+
+.nav-bottom__logo {
+    @include for-phone-mini() {
+        width: 35px;
+        height: 35px;
+    }
+
+    @include for-rare-phone-mini() {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .nav-bottom__icons {
@@ -14,11 +34,56 @@
 
 .map-icon {
     margin-right: 10px;
+
+    @include for-phone-mini() {
+        width: 13px;
+        height: 16px;
+    }
 }
 
+
+
 .map-icon_text {
-    line-height: calc(14.4 / 12);
+    line-height: calc(14 / 12);
     letter-spacing: 2px;
     color: var(--nav-bottom-text-color);
     margin-right: 46px;
+
+    @include for-phone-mini() {
+        font-size: 11px;
+        line-height: calc(14 / 11);
+        margin-right: 27px;
+    }
+}
+
+
+
+.cart-icon {
+    @include for-rare-phone-mini() {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.nav__btn {
+    display: none;
+
+    @include for-tablet() {
+        display: block;
+        margin-left: 46px;
+    }
+}
+
+.open-mobile-nav-btn {
+    @include for-rare-phone-mini() {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.open-menu {
+    @include for-rare-phone-mini() {
+        width: 20px;
+        height: 20px;
+    }
 }

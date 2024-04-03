@@ -4,4 +4,23 @@
     grid-template-columns: repeat(2, 588px);
     gap: 32px 24px;
     justify-content: center;
+   
+
+    @include for-desktop() {
+        grid-template-columns: repeat(2, 445px);
+    }
+
+    @include for-tablet() {
+        grid-template-columns: repeat(2, 300px);
+        margin-bottom: 180px;
+    }
+
+    @include for-standart-mobile() {
+        grid-template-columns: repeat(1, 90%);
+        margin-bottom: 140px;
+    }
+
+    @include for-phone-mini() {
+        margin-bottom: 60px;
+    }
 }
